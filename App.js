@@ -4,14 +4,19 @@ import { Provider } from 'react-redux';
 import { store } from './redux/store';
 import HomeScreen from './screen/HomeScreen';
 import tw from "twrnc"
+import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
+  const Stack = createNativeStackNavigator();
   return (
     <Provider store={store}>
+    <NavigationContainer>
     <SafeAreaView >
      <HomeScreen />
    
     </SafeAreaView>
+    
+  </NavigationContainer>
     </Provider>
   );
 }
