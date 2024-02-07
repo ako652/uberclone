@@ -1,10 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
+
 import { StyleSheet, Text, View , SafeAreaView} from 'react-native';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
 import HomeScreen from './screen/HomeScreen';
 import tw from "twrnc"
 import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 
 export default function App() {
   const Stack = createNativeStackNavigator();
